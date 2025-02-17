@@ -15,36 +15,36 @@ public class Address {
 
 	}
 	@FindBy(id="company")
-	WebElement companyname;
+	private WebElement companyname;
 
 	@FindBy(id="address1")
-	WebElement address;
+	private WebElement address;
 
 	@FindBy(id="address2")
-	WebElement address2;
+	private WebElement address2;
 
 	@FindBy(id="city")
-	WebElement city;
+	private WebElement city;
 
 	@FindBy(id="id_state")
-	WebElement state;
+	private	WebElement state;
 
 	@FindBy(id="postcode")
-	WebElement postcode;
+	private WebElement postcode;
 
 	@FindBy(id="phone")
-	WebElement phone;
+	private	WebElement phone;
 
 	@FindBy(id="phone_mobile")
-	WebElement moblie;
+	private WebElement moblie;
 
 	@FindBy(id="submitAddress")
-	WebElement subbmit;
+	private WebElement subbmit;
 
 	@FindBy(xpath="//button[@class='button btn btn-default button-medium']")
-	WebElement clickToPro;
+	private WebElement clickToPro;
 
-	
+
 
 	public void companyname() {
 		companyname.sendKeys("Teceon Softwere Pvt Ltd");

@@ -9,6 +9,7 @@
       <class name="TestClass.TC_MyAccount">
         <methods>
           <include name="VerifyLogin"/>
+          <include name="VerifyAccountpage"/>
           <include name="TearDown"/>
           <include name="Setup"/>
         </methods>

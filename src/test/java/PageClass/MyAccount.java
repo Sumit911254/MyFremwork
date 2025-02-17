@@ -20,48 +20,48 @@ public class MyAccount {
 	}
 	// identify Element
 	@FindBy(id="email_create")
-	WebElement CreateAccount;
+	private WebElement CreateAccount;
 
 
 	//
 	@FindBy(id="SubmitCreate")
-	WebElement SubmitCreate;
-	
-	
-	
-	
+	private WebElement SubmitCreate;
+
+
+
+
 	//Already Register
-	
+
 	@FindBy(id="email")
-	WebElement RegesterEmail;
-	
+	private	WebElement RegesterEmail;
+
 	@FindBy(id="passwd")
-	WebElement RegesterPass;
-	
-	
+	private	WebElement RegesterPass;
+
+
 	@FindBy(id="SubmitLogin")
-	WebElement submitlogin;
-	
-	
-	
-	
-	
+	private	WebElement submitlogin;
+
+
+
+
+
 	@FindBy(id="search_query_top")
-	WebElement searchbox;
-	
+	private WebElement searchbox;
+
 	@FindBy(xpath="//button[@name='submit_search']")
-	WebElement ClickSearch;
-	
+	private	WebElement ClickSearch;
+
 	@FindBy(xpath="//a[@class='product-name' and  @title='Printed Summer Dress']")
-	WebElement clickproduct;
-	
+	private	WebElement clickproduct;
+
 	@FindBy(id="color_11")
-	WebElement selectColor;
-	
-	
-	
-	
-	
+	private WebElement selectColor;
+
+
+
+
+
 
 
 	public void enterEmailId(String EmailAddress ) {
@@ -72,27 +72,27 @@ public class MyAccount {
 	public void ClickSubmitCreate() {
 		SubmitCreate.click();
 	}
-	
+
 
 	public void AlreadyregEmail(String AlreadyregEmail) {
 		RegesterEmail.sendKeys("rohitroy1234@gmail.com");
 	}
-	
+
 	public void AlredyRedpass(String AlredyRedpass) {
 		RegesterPass.sendKeys("demo1234");
 	}
 	public void SubmmitLogin() {
 		submitlogin.click();
 	}
-	
+
 	public void searchProduct() {
 		searchbox.sendKeys("Printed Dress");
-		
+
 	}
 	public void clickSearch() {
 		ClickSearch.click();
 	}
-	
+
 	public void clickproduct() {
 		clickproduct.click();
 	}

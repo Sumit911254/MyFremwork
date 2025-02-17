@@ -17,26 +17,26 @@ public class CreateAnAcoount {
 	}
 	//Title
 	@FindBy(id="uniform-id_gender1")
-	WebElement Title;
+	private	WebElement Title;
 
 	//FrstName
 	@FindBy(id="customer_firstname")
-	WebElement FirstName;
+	private WebElement FirstName;
 
 	//LastName
 	@FindBy(id="customer_lastname")
-	WebElement LastName;
+	private WebElement LastName;
 
 	//Email
 	@FindBy(id="email")
-	WebElement email;
+	private WebElement email;
 
 	//Password
 	@FindBy(id="passwd")
-	WebElement Password;
+	private WebElement Password;
 
 	@FindBy(id="submitAccount")
-	WebElement Subbmit;
+	private WebElement Subbmit;
 
 
 

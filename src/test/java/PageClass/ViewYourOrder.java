@@ -19,7 +19,7 @@ public class ViewYourOrder {
 	
 	}
 	@FindBy(xpath="//a[@class='button-exclusive btn btn-default']")
-	WebElement ViewOrder;
+	private WebElement ViewOrder;
 	
 	public void orderview() {
 		ViewOrder.click();

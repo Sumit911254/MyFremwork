@@ -17,11 +17,11 @@ public class Shipping {
 	}
 
 	@FindBy(id="cgv")
-	WebElement checkbox;
+	private WebElement checkbox;
 
 
 	@FindBy(xpath="//button[@name='processCarrier']")
-	WebElement clicktoproced;
+	private WebElement clicktoproced;
 
 
 	

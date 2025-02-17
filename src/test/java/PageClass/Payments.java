@@ -18,10 +18,10 @@ public class Payments {
 
 
 	@FindBy(xpath="//a[@class='cheque']")
-	WebElement clicktocheque;
+	private WebElement clicktocheque;
 
 	@FindBy(xpath="//span[text()='I confirm my order']")
-	WebElement confirmorder;
+	private WebElement confirmorder;
 
 	
 	

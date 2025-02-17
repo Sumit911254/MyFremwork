@@ -22,7 +22,8 @@ public class IndexPage {
 	//identify element
 
 	@FindBy(linkText="Sign in")
-	WebElement SinIn;
+	private WebElement SinIn;
+	
 
 	//click on SinIn
 

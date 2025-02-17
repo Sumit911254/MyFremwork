@@ -13,7 +13,7 @@ public class SearchProduct extends baseClass{
 	
 	@Test
 	public void SearchProduc() {
-		driver.get(url);
+		
 		IndexPage ip=new IndexPage(driver);
 		ip.clickOnSin();
 		

@@ -56,6 +56,7 @@ public class baseClass {
 		case"firefox":
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
+			driver.manage().window().maximize();
 			break;
 
 		default:
@@ -66,6 +67,8 @@ public class baseClass {
 		//wait
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+		
+		driver.get(url);
 
 		
 
@@ -75,7 +78,7 @@ public class baseClass {
 	@AfterClass
 	public void TearDown() {
 		//driver.close();
-		driver.quit();
+		//driver.quit();
 	}
 
 	public void screensort(WebDriver driver,String testname) throws IOException {

@@ -1,5 +1,6 @@
 package TestClass;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import PageClass.AddToCart;
@@ -11,13 +12,14 @@ import PageClass.Payments;
 import PageClass.Shipping;
 import PageClass.VerifyUser;
 import PageClass.ViewYourOrder;
+import Utilities.ExtentListenerclass;
 import junit.framework.Assert;
 
 public class TC_MyAccount extends baseClass {
 
 	@Test(enabled=false)
 	public void VerifyAccountpage() {
-		driver.get(url);
+		
 
 
 
@@ -56,7 +58,7 @@ public class TC_MyAccount extends baseClass {
 	@Test
 	public void VerifyLogin() {
 
-		driver.get(url);
+		
 
 		IndexPage ip=new IndexPage(driver);
 

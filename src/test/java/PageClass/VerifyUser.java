@@ -18,7 +18,7 @@ public class VerifyUser {
 	}
 	
 	@FindBy(xpath="//a[@title='View my customer account']")
-	WebElement userregister;
+	private WebElement userregister;
 	
 	
 	public String userverify() {
